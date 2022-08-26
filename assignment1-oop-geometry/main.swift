@@ -92,12 +92,7 @@ repeat{
             print("Area of Rectangle is : Can't calculate because width or length value is 0")
         }
         
-        (temp_return_status,temp_return_value) = geometry.Square()
-        if temp_return_status == true {
-            print("Area of Square is : \(temp_return_value)")
-        }else{
-            print("Area of Square is : Can't calculate because edge length value is 0")
-        }
+        geometry.Square()
 
     }else if(menu_select == 4){
         use_status = false

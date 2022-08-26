@@ -40,7 +40,11 @@ class Geometry: NSObject {
     }
     
     // สี่เหลี่ยมจัตุรัส = ด้าน x ด้าน
-    func Square() -> (Bool,Float) {
-        return (edgeLength > 0 ? (true, edgeLength*edgeLength) : (false, 0))
+    func Square(){
+        if edgeLength > 0 {
+            print("Area of Square is : \(edgeLength*edgeLength)")
+        }else{
+            print("Area of Square is : Can't calculate because edge length value is 0")
+        }
     }
 }
