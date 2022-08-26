@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AFC483CD28B7D9A5008A8052 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC483CC28B7D9A5008A8052 /* main.swift */; };
+		AFC483D428B7DED6008A8052 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC483D328B7DED6008A8052 /* Geometry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		AFC483C928B7D9A5008A8052 /* assignment1-oop-geometry */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "assignment1-oop-geometry"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFC483CC28B7D9A5008A8052 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		AFC483D328B7DED6008A8052 /* Geometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geometry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				AFC483CC28B7D9A5008A8052 /* main.swift */,
+				AFC483D328B7DED6008A8052 /* Geometry.swift */,
 			);
 			path = "assignment1-oop-geometry";
 			sourceTree = "<group>";
@@ -121,6 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFC483CD28B7D9A5008A8052 /* main.swift in Sources */,
+				AFC483D428B7DED6008A8052 /* Geometry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
