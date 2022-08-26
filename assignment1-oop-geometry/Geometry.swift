@@ -43,9 +43,4 @@ class Geometry: NSObject {
     func Square() -> (Bool,Float) {
         return (edgeLength > 0 ? (true, edgeLength*edgeLength) : (false, 0))
     }
-    
-    //สี่เหลี่ยมด้านขนาน = ฐาน x สูง
-    func Parallelogram() -> (Bool,Float) {
-        return (base > 0 && height > 0 ? (true, base*height) : (false, 0))
-    }
 }

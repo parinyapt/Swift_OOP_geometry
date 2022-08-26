@@ -28,8 +28,8 @@ var suggestInputValue:[String:String] = [
     "Radius":"For: Circle",
     "Length":"For: Rectangle",
     "Width":"For: Rectangle",
-    "Base":"For: Triangle,Parallelogram",
-    "Height":"For: Triangle,Parallelogram",
+    "Base":"For: Triangle",
+    "Height":"For: Triangle",
     "EdgeLength":"For: Square"
 ]
 
@@ -59,7 +59,7 @@ repeat{
                 temp_status = false
                 print("Enter \(key) (\(suggestInputValue[key]!)) or 0 if don't want to calculate this geometry : ",terminator: "")
                 temp_text = readLine()!
-                if Float(temp_text) != nil {
+                if Float(temp_text) != nil && Float(temp_text)! >= 0 {
                     inputValue[key] = Float(temp_text)!
                     temp_status = true
                 }
@@ -98,13 +98,7 @@ repeat{
         }else{
             print("Area of Square is : Can't calculate because edge length value is 0")
         }
-        
-        (temp_return_status,temp_return_value) = geometry.Parallelogram()
-        if temp_return_status == true {
-            print("Area of Parallelogram is : \(temp_return_value)")
-        }else{
-            print("Area of Parallelogram is : Can't calculate because base or height value is 0")
-        }
+
     }else if(menu_select == 4){
         use_status = false
     }else{
